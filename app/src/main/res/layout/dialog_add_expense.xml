@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1A1A1A"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Pengeluaran Baru"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input Judul -->
+    <EditText
+        android:id="@+id/etTitleModal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_input_rounded"
+        android:hint="Nama Pengeluaran (misal: Kopi)"
+        android:paddingHorizontal="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#777777"
+        android:textSize="14sp"
+        android:inputType="text" />
+
+    <!-- Input Jumlah -->
+    <EditText
+        android:id="@+id/etAmountModal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_input_rounded"
+        android:hint="Jumlah (Rp)"
+        android:paddingHorizontal="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#777777"
+        android:textSize="14sp"
+        android:inputType="number" />
+
+    <!-- Spinner Kategori -->
+    <Spinner
+        android:id="@+id/spinnerCategoryModal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_input_rounded"
+        android:paddingHorizontal="12dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/btnAddModal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="SIMPAN PENGELUARAN"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>

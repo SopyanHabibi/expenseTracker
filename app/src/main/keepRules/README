@@ -1,0 +1,32 @@
+# Expense Tracker - Android Native (Kotlin)
+
+Aplikasi pelacak pengeluaran harian berbasis Android native dengan penyimpanan data lokal, struktur kode yang terpisah (*clean architecture*), dan komponen antarmuka kustom.
+
+## 🛠️ Teknologi & Arsitektur
+* **Bahasa:** Kotlin
+* **Antarmuka (UI):** XML Layout, ConstraintLayout, RecyclerView
+* **Pola Struktur:** Modular berdasarkan direktori (`data`, `ui`, `utils`)
+* **Penyimpanan Lokal:** SharedPreferences
+* **Serialisasi Data:** Google Gson
+
+## 🚀 Fitur Utama
+1. **Daftar Pengeluaran Dinamis:** Menampilkan daftar menggunakan `RecyclerView` dengan *Adapter* kustom dan *lambda callback* untuk interaksi aksi.
+2. **Validasi & Format Input:** Pencegahan input kosong atau nilai negatif secara *real-time*, lengkap dengan pemformatan otomatis ke mata uang Rupiah (IDR).
+3. **Mekanisme Hapus Minimalis:** Menggunakan elemen garis merah tipis sebagai tombol hapus item yang langsung memperbarui total pengeluaran secara akurat.
+4. **Manajemen Tampilan Kosong (Empty State):** Otomatis memunculkan teks informasi jika data pengeluaran belum tersedia.
+5. **Penyimpanan Data Lokal:** Menyimpan riwayat pengeluaran secara permanen menggunakan format JSON melalui Gson dan SharedPreferences, sehingga data tidak hilang saat aplikasi ditutup.
+
+## 📁 Struktur Proyek
+```text
+com.namakamu.expensetracker/
+│
+├── data/
+│   └── Expense.kt          # Kelas model data pengeluaran
+│
+├── ui/
+│   ├── MainActivity.kt     # Pengontrol utama & pengelola state
+│   └── ExpenseAdapter.kt   # Adapter untuk RecyclerView
+│
+└── utils/
+    ├── CurrencyUtils.kt    # Helper pengubah format Rupiah
+    └── SharedPrefsHelper.kt# Helper penyimpanan lokal & Gson

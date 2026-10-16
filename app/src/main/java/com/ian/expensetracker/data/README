@@ -1,0 +1,4 @@
+💡 Kenapa pakai data class?
+Di Kotlin, data class adalah kelas spesial yang otomatis dibuatkan fungsi penting seperti constructor,
+getter/setter, dan toString secara instan. Ini mirip kayak bikin interface/type di TypeScript.
+

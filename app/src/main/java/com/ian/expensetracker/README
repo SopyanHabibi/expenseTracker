@@ -1,0 +1,12 @@
+AppCompactActivity adalah kelas dasar di Android buat memastikan tampilan aplikasi
+kompatibel di berbagai versi HP Android
+
+Ketika menghubungkan Kotlin dengan file layout XML
+menggunakan R.layout karena dipakai untuk merujuk ke file kerangka Tampilan (XML layout) secara utuh
+ibarat di web, ini kayak manggil file HTML nya
+
+sedangkan R.id dipakai untuk merujuk ke elemen spesifik / komponen spesifik di dalam file XML tersebut
+berdasarkan ID nya. ibarat di web, ini mirip kayak pakai document.getElementById('elemen')
+
+R itu singkatan dari Resource
+

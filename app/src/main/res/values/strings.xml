@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">expensetracker</string>
+    <string name="hint_title">Nama Pengeluaran (misal: Kopi)</string>
+    <string name="hint_amount">Jumlah (Rp)</string>
+    <string name="btn_add">Tambah</string>
+    <string name="total_label">Total Pengeluaran: </string>
+</resources>

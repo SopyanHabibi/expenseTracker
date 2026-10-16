@@ -1,0 +1,35 @@
+# 💰 PengeluaranKu (Expense Tracker Android App)
+
+Aplikasi pencatat pengeluaran sederhana berbasis Android yang dibangun dari **nol (No Activity Template)** menggunakan **Kotlin** dan **Native XML Layouts**. Proyek ini dibuat untuk mempelajari dasar-dasar pengembangan aplikasi *mobile* Android, mulai dari manajemen struktur direktori, *UI layout*, hingga *state management* list data secara *real-time*.
+
+---
+
+## 🚀 Fitur Utama
+* **Input Transaksi:** Menambahkan nama pengeluaran dan nominal biaya secara instan.
+* **Dynamic List (RecyclerView):** Menampilkan daftar riwayat pengeluaran secara efisien dan rapi.
+* **Real-Time Total Calculation:** Menghitung dan memperbarui total akumulasi pengeluaran secara otomatis setiap kali ada data baru yang ditambahkan.
+* **Clean Architecture Intro:** Memisahkan struktur folder berdasarkan fungsi (*data*, *ui*).
+
+---
+
+## 📂 Struktur Project (Architecture)
+Struktur direktori dirancang terorganisir ala *Clean Architecture* untuk memudahkan pengelolaan komponen:
+
+```text
+app/src/main/java/com/namakamu/expensetracker/
+│
+├── data/
+│   └── Expense.kt          # Data class untuk cetak biru objek pengeluaran
+│
+├── ui/
+│   ├── main/
+│   │   └── MainActivity.kt # Activity utama (Entry point & logika interaksi)
+│   └── ExpenseAdapter.kt   # Adapter untuk menghubungkan data list ke RecyclerView
+│
+└── res/
+    ├── layout/
+    │   ├── activity_main.xml # Layout halaman utama
+    │   └── item_expense.xml  # Layout komponen baris untuk list pengeluaran
+    └── values/
+        ├── colors.xml        # Definisi warna tema aplikasi
+        └── strings.xml       # Definisi teks/string aplikasi
